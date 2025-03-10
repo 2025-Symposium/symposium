@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Level Technical Symposium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>UNIVERSITY COLLEGE OF ENGINEERING, PANRUTI</h1>
+            <h2>(A Constituent College of Anna University)</h2>
+            <div class="symposium-title">
+                <h3>NATIONAL LEVEL TECHNICAL SYMPOSIUM</h3>
+                <span class="symposium-name">TECHNOPAN*25</span>
+            </div>
+            <h4>ASSOCIATION OF COMPUTER SCIENCE ENGINEERING</h4>
+            <p>(ALL DEPARTMENTS ARE WELCOME)</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="technical-rounds">
+            <h2><i class="fas fa-laptop-code"></i> TECHNICAL EVENTS</h2>
+            <div class="card-container">
+                <div class="card">PAPER PRESENTATION</div>
+                <div class="card">CODE DEBUGGING</div>
+                <div class="card">WEB DESIGN</div>
+                <div class="card">MIND MAZE</div>
+                <div class="card">BLENDER ANIMATION</div>
+            </div>
+        </section>
+
+        <section class="non-technical-rounds">
+            <h2><i class="fas fa-gamepad"></i> NON-TECHNICAL EVENTS</h2>
+            <div class="card-container">
+                <div class="card">FREE FIRE</div>
+                <div class="card">IPL AUCTION</div>
+                
+                <div class="card">TAMGLISH HUNT</div>
+                <div class="card">BLOW & GRAB</div>
+            </div>
+        </section>
+        <!-- Add this section below the Non-Technical Events section -->
+<section class="student-coordinators">
+    <h2><i class="fas fa-users"></i> STUDENT COORDINATORS</h2>
+    <div class="coordinators-container">
+        <div class="coordinator-card">
+            <h3>SanthoshKumar</h3>
+            <p><strong>Phone:</strong> 8778161418</p>
+            
+        </div>
+        <div class="coordinator-card">
+            <h3>Bavavishnu</h3>
+            <p><strong>Phone:</strong> 8778168365</p>
+            
+        </div>
+        <div class="coordinator-card">
+            <h3>Kaviya</h3>
+            <p><strong>Phone:</strong> 6369384956</p>
+            
+        </div>
+    </div>
+</section>
+
+        <section class="rules">
+            <h2><i class="fas fa-file-pdf"></i> EVENTS RULES DETAILS</h2>
+            <a href="Event Rules PDF.pdf" download="symposium.pdf" class="download-btn">
+                <i class="fas fa-download"></i> Download Rules PDF
+            </a>
+        </section>
+      
+<!-- Add this modal structure at the end of the body -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Details</h2>
+        <p><strong>Event:</strong> <span id="eventName"></span></p>
+        <p><strong>Contact Person:</strong> <span id="contactPerson"></span></p>
+        <p><strong>Phone:</strong> <span id="contactPhone"></span></p>
+        <p><strong>More Details:Download Event PDF</strong> <span id="contactEmail"></span></p>
+       
+    </div>
+</div>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 University College of Engineering, Panruti. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

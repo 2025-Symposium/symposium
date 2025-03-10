@@ -1,0 +1,321 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('tech-bg.jpg') no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+header h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #ffcc00;
+    font-weight: 600;
+}
+
+header h4 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon and text */
+    gap: 10px;
+}
+
+h2 i {
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #ffcc00;
+    color: #1e3c72;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for tablets */
+    }
+
+    header h2 {
+        font-size: 1.2rem; /* Smaller font size for tablets */
+    }
+
+    header h3 {
+        font-size: 1.5rem; /* Smaller font size for tablets */
+    }
+
+    header h4 {
+        font-size: 1rem; /* Smaller font size for tablets */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Smaller font size for tablets */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size for tablets */
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust card layout for tablets */
+    }
+
+    .card {
+        font-size: 1rem; /* Smaller font size for tablets */
+    }
+
+    .download-btn {
+        font-size: 1rem; /* Smaller font size for tablets */
+        padding: 10px 20px; /* Smaller padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Even smaller font size for mobile */
+    }
+
+    header h2 {
+        font-size: 1rem; /* Even smaller font size for mobile */
+    }
+
+    header h3 {
+        font-size: 1.2rem; /* Even smaller font size for mobile */
+    }
+
+    header h4 {
+        font-size: 0.9rem; /* Even smaller font size for mobile */
+    }
+
+    header p {
+        font-size: 0.8rem; /* Even smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Even smaller font size for mobile */
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust card layout for mobile */
+    }
+
+    .card {
+        font-size: 0.9rem; /* Even smaller font size for mobile */
+    }
+
+    .download-btn {
+        font-size: 0.9rem; /* Even smaller font size for mobile */
+        padding: 8px 16px; /* Even smaller padding for mobile */
+    }
+}
+.rules {
+    text-align: center; /* Center the content inside the rules section */
+    margin-bottom: 40px; /* Add some spacing below the section */
+}
+
+.download-btn {
+    display: inline-block; /* Ensure the button behaves as a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 12px 24px;
+    background: #ffcc00;
+    color: #1e3c72;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+.symposium-title .symposium-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 10px;
+    animation: glow 2s infinite alternate;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #ffcc00;
+    border-radius: 10px;
+    width: 80%; /* 80% width */
+    max-width: 500px; /* Maximum width */
+    color: #fff;
+    position: relative;
+}
+
+.close {
+    color: #ffcc00;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e6b800;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #ffcc00;
+}
+
+.modal-content p {
+    margin: 10px 0;
+}
+/* Student Coordinators Section */
+.student-coordinators {
+    margin-bottom: 40px;
+}
+
+.coordinators-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.coordinator-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.coordinator-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.coordinator-card h3 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.coordinator-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
